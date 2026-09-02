@@ -1,10 +1,14 @@
 # CG_Assignments
 ### 📚 A collection of my CodingGita assignments and learning projects covering 📚
+
+- Version Control & Collaboration
+  - [x] Git
+  - [x] GitHub
 - Web Development
-  - HTML
-  - CSS
-  - JavaScript
+  - [x] HTML
+  - [ ] CSS
+  - [ ] JavaScript
 - Programming
-  - Python
-- Design
-  - Figma
+  - [x] Python
+- UI/UX & Design
+  - [x] Figma
