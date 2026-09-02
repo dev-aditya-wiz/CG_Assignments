@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Full Page Iframe</title>
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        header {
+            height: 70px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        iframe {
+            width: 100%;
+            height: calc(100vh - 70px);
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Interactive Device Website</h1>
+</header>
+
+<iframe
+    src="https://example.com"
+    allow="fullscreen; gyroscope; usb"
+    allowfullscreen
+    title="Full Page Interactive Device Content">
+</iframe>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Permission Comparison</title>
+
+    <style>
+        iframe {
+            width: 48%;
+            height: 350px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<iframe
+    src="https://example.com"
+    allow="fullscreen"
+    title="Version A - Fullscreen Only">
+</iframe>
+
+<iframe
+    src="https://example.com"
+    allow="fullscreen; gyroscope; usb"
+    title="Version B - Fullscreen Gyroscope USB">
+</iframe>
+
+</body>
+</html>
