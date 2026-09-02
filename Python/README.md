@@ -1,1 +1,26 @@
+## Topics Covered in Python
 
+- [x] 01. Introduction to Python - Practice Problems
+- [x] 02. Variables - Practice Problems
+- [x] 03. Data Types - Practice Problems
+- [x] 04. Numbers & Arithmetic - Practice Problems
+- [x] 05. Operators - Practice Problems
+- [ ] 06. Strings - Practice Problems
+- [ ] 07. Conditional Statements - Practice Problems
+- [ ] 08. Loops - Practice Problems
+- [ ] 09. Lists - Practice Problems
+- [ ] 10. Tuples - Practice Problems
+- [ ] 11. Sets - Practice Problems
+- [ ] 12. Dictionaries - Practice Problems
+- [ ] 13. Functions - Practice Problems
+- [ ] 14. Modules & Packages - Practice Problems
+- [ ] 15. File Handling - Practice Problems
+- [ ] 16. Exception Handling - Practice Problems
+- [ ] 17. Object-Oriented Programming - Practice Problems
+- [ ] 18. List, Set & Dictionary Comprehensions - Practice Problems
+- [ ] 19. Lambda Functions - Practice Problems
+- [ ] 20. Iterators & Generators - Practice Problems
+- [ ] 21. Working with JSON - Practice Problems
+- [ ] 22. Regular Expressions - Practice Problems
+- [ ] 23. Virtual Environments & pip Package Management - Practice Problems
+- [ ] 24. Python Projects
