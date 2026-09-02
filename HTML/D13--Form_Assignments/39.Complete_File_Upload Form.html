@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="/upload.php"
+      method="post"
+      enctype="multipart/form-data">
+
+    <h2>Upload Documents</h2>
+
+    <label for="resume">Resume:</label>
+    <input
+        type="file"
+        id="resume"
+        name="resume"
+        accept=".pdf,.docx"
+        required
+    >
+
+    <label for="photo">Profile Photo:</label>
+    <input
+        type="file"
+        id="photo"
+        name="photo"
+        accept="image/*"
+    >
+
+    <button type="submit">Upload</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="/feedback.php" method="post">
+
+    <h2>Feedback Survey</h2>
+
+    <label for="satisfaction">
+        Satisfaction (1-10):
+    </label>
+
+    <input
+        type="range"
+        id="satisfaction"
+        name="satisfaction"
+        min="1"
+        max="10"
+        value="5"
+    >
+
+    <p>Would you recommend us?</p>
+
+    <input
+        type="radio"
+        id="recommendYes"
+        name="recommend"
+        value="yes"
+    >
+    <label for="recommendYes">Yes</label>
+
+    <input
+        type="radio"
+        id="recommendNo"
+        name="recommend"
+        value="no"
+    >
+    <label for="recommendNo">No</label>
+
+    <label for="comments">Comments:</label>
+    <textarea
+        id="comments"
+        name="comments"
+        rows="4"
+        cols="50"
+    ></textarea>
+
+    <button type="submit">Submit Feedback</button>
+</form>
+</body>
+</html>
