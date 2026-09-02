@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Combined Table</title>
+</head>
+<body>
+    <table border="1">
+
+    <caption>Student Course Performance</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">Student</th>
+            <th scope="col">Course</th>
+            <th scope="col">Duration</th>
+            <th scope="col">Result</th>
+        </tr>
+    </thead>
+
+    <tbody>
+
+        <tr>
+            <th rowspan="2" scope="row">Aditya</th>
+            <td>Web Development</td>
+            <td>4 Months</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <td>Data Analytics</td>
+            <td>5 Months</td>
+            <td>Pass</td>
+        </tr>
+
+        <tr>
+            <th scope="row">Rahul</th>
+            <td>Web Development</td>
+            <td>4 Months</td>
+            <td>Pass</td>
+        </tr>
+
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="4">End of Student Performance Report</td>
+        </tr>
+    </tfoot>
+
+    </table>
+</body>
+</html>
