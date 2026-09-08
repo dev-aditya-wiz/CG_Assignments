@@ -15,3 +15,6 @@
 - [x] 13. Modify-Delete Conflicts
 - [x] 14. Theoretical Practice Test
 - [x] 15. Git Restore, Git RM & Gitignore
+- [x] 16. git reset • --soft • --mixed • --hard • HEAD • git revert
+- [x] 17. git revert (Deep Dive) • Modify-Delete Conflicts • Revert Options • Comparison with reset & restore
+- [x] 18. Git Reflog & Recovery
