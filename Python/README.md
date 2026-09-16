@@ -5,7 +5,7 @@
 - [x] 03. Data Types - Practice Problems
 - [x] 04. Numbers & Arithmetic - Practice Problems
 - [x] 05. Operators - Practice Problems
-- [ ] 06. Strings - Practice Problems
+- [x] 06. Strings - Practice Problems
 - [ ] 07. Conditional Statements - Practice Problems
 - [ ] 08. Loops - Practice Problems
 - [ ] 09. Lists - Practice Problems
