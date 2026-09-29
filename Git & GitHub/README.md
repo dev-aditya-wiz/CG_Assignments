@@ -18,3 +18,8 @@
 - [x] 16. git reset • --soft • --mixed • --hard • HEAD • git revert
 - [x] 17. git revert (Deep Dive) • Modify-Delete Conflicts • Revert Options • Comparison with reset & restore
 - [x] 18. Git Reflog & Recovery
+- [x] 19. Git Stash - Save Your Work Without Committing
+- [x] 20. Git Tags, Semantic Versioning & Releases
+- [x] 21. Git Rebase • Git Merge & Merge Conflict Revision
+- [x] 22. Git Cherry-Pick
+- [x] 23. GitHub Team Collaboration
