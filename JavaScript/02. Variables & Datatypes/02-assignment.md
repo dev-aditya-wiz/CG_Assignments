@@ -620,27 +620,3 @@ console.log(student);
 Objects are non-primitive/reference types because they can contain multiple properties and values and are handled through references.
 
 ---
-
-# Quick Revision Table
-
-| Topic | Key Point |
-|---|---|
-| `var` | Function-scoped; can be re-declared and re-assigned |
-| `let` | Block-scoped; cannot be re-declared in the same scope; can be re-assigned |
-| `const` | Block-scoped; cannot be re-declared or re-assigned |
-| `var` hoisting | Hoisted and initialized with `undefined` |
-| `let` hoisting | Hoisted but in Temporal Dead Zone before declaration |
-| `const` hoisting | Hoisted but in Temporal Dead Zone before declaration |
-| Number | Used for integers and decimals |
-| String | Text data |
-| Boolean | `true` or `false` |
-| Undefined | Declared but not assigned |
-| Null | Intentional empty value |
-| Symbol | Unique primitive value |
-| BigInt | Large integers with exact precision |
-| Object | Non-primitive/reference type |
-| Array | Non-primitive/reference type |
-| `typeof null` | `"object"` |
-| JavaScript case sensitivity | Yes |
-| String styles | `'...'`, `"..."`, and `` `...` `` |
-| BigInt literal | Add `n`, e.g. `123n` |
