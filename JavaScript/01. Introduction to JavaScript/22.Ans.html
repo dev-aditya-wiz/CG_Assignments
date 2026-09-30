@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Driven Programming</title>
+</head>
+<body>
+
+    <button id="myBtn">Click Me</button>
+
+    <p id="demo">Click the button.</p>
+
+    <script>
+        document.getElementById("myBtn").addEventListener("click", function() {
+            document.getElementById("demo").textContent = "Button was clicked!";
+        });
+    </script>
+
+</body>
+</html>
