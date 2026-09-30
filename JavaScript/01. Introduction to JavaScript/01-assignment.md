@@ -439,28 +439,3 @@ JavaScript also became useful in many other areas through technologies such as *
 **ECMAScript** also played an important role. Regular ECMAScript updates introduced new language features, improvements, and modern programming capabilities. JavaScript engines implemented these features, allowing developers to write more powerful and maintainable applications.
 
 Therefore, JavaScript became a multipurpose language because of its **browser support, continuous development through ECMAScript, Node.js, large ecosystem, and ability to work across different types of applications**.
-
----
-
-# Quick Revision Table
-
-| Topic | Answer |
-|---|---|
-| Creator | Brendan Eich |
-| Created | 1995 |
-| Original name | Mocha |
-| JavaScript extension | `.js` |
-| Chrome engine | V8 |
-| Firefox engine | SpiderMonkey |
-| Safari engine | JavaScriptCore |
-| Typing | Dynamically typed |
-| Standard | ECMAScript |
-| Server-side runtime | Node.js |
-| Frontend pillars | HTML + CSS + JavaScript |
-| HTML | Structure |
-| CSS | Styling |
-| JavaScript | Behavior/Interactivity |
-| JavaScript case sensitivity | Case-sensitive |
-| Backend example | Node.js |
-| Mobile example | React Native |
-| Desktop example | Electron |
