@@ -1,7 +1,5 @@
 # Assignment: Introduction to JavaScript
 
-**Deadline:** 28th September, 2026
-
 ---
 
 ## Section A: Short Answer Questions
@@ -31,8 +29,6 @@ A high-level programming language is designed to be easy for humans to read and 
 ```javascript
 let total = price + tax;
 ```
-
-We do not need to write machine-level instructions.
 
 ### Q6. Is JavaScript a compiled language or an interpreted language? Explain briefly.
 
@@ -405,25 +401,6 @@ The `click` event occurs when the user clicks the button. JavaScript detects the
 </body>
 </html>
 ```
-
-### What happens?
-
-When the page loads:
-
-```text
-JavaScript is running successfully!
-```
-
-appears in the **browser console**.
-
-When the user clicks **Click Me**:
-
-1. An alert appears:
-   ```text
-   Hello, B.Tech Student!
-   ```
-2. The webpage background changes to **light blue**.
-
 ---
 
 # Section G: Higher Order Thinking
