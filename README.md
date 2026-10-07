@@ -6,8 +6,8 @@
   - [x] GitHub
 - Web Development
   - [x] HTML
-  - [ ] CSS
-  - [ ] JavaScript
+  - [x] CSS
+  - [x] JavaScript
 - Programming
   - [x] Python
 - UI/UX & Design
