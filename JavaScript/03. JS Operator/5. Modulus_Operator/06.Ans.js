@@ -1,0 +1,1 @@
+console.log(29 % 5);
