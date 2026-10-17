@@ -21,3 +21,17 @@ if (email.includes("@")) {
 
 // Output:
 // Valid Email
+
+// OR
+
+let $email = "abc.cg@gmail.com"
+
+if ($email.includes("@")==true){
+    let l = $email.length;
+    let last_char = $email[l-4]+$email[l-3]+$email[l-2]+$email[l-1];
+    if (last_char==".com"){
+        if (l>10){
+            console.log("The email",$email,"is Valid Email")
+        }
+    }
+}

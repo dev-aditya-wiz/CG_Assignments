@@ -8,7 +8,7 @@ let isPremiumMember = true;
 let finalAmount = cartTotal;
 
 if (cartTotal >= 1000) {
-    if (isPremiumMember) {
+    if (isPremiumMember==true) {
         finalAmount = cartTotal * 0.80;
     } else {
         finalAmount = cartTotal * 0.90;
