@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /* --- Reset & Global --- */
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background-color: #ffffff;
+        padding: 40px 20px;
+      }
+
+      /* --- Team Container (Flexbox Grid) --- */
+      .team {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 32px;
+        width: 100%;
+        max-width: 1000px;
+      }
+
+      /* --- Individual Member Card --- */
+      .member {
+        position: relative;
+        /* Flexbox properties to allow 3 columns on desktop, 1 on mobile */
+        flex: 1 1 280px;
+        max-width: 300px;
+        height: 380px;
+
+        /* The studio grey background acting as a placeholder for the photos */
+        background-color: #e5e7eb;
+
+        /* Centers the text at the bottom of the card */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 24px;
+      }
+
+      /* Reordering logic (Team Leader first) */
+      .member:nth-child(3) {
+        order: 1;
+      } /* Aman */
+      .member:nth-child(1) {
+        order: 2;
+      } /* Rahul */
+      .member:nth-child(2) {
+        order: 3;
+      } /* Priya */
+      .member:nth-child(4) {
+        order: 4;
+      } /* Neha */
+
+      /* --- The White Pill-Shaped Box --- */
+      /* We create this using a pseudo-element so we don't have to alter your HTML */
+      .member::after {
+        content: "";
+        position: absolute;
+        bottom: 20px;
+        width: 85%;
+        height: 64px;
+        background-color: #ffffff;
+        border: 1px solid #111111;
+        border-radius: 40px; /* Creates the pill shape */
+        z-index: 1; /* Keeps the background behind the text */
+      }
+
+      /* --- Text Styling --- */
+      .member h3,
+      .member p {
+        position: relative;
+        z-index: 2; /* Pulls the text in front of the white pill */
+        text-align: center;
+      }
+
+      .member h3 {
+        font-size: 16px;
+        font-weight: 700;
+        color: #111111;
+        margin-bottom: 2px;
+        margin-top: 10px; /* Vertically centers it inside the pill */
+      }
+
+      .member p {
+        font-size: 13px;
+        color: #71717a;
+        font-weight: 400;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="team">
+      <article class="member">
+        <h3>Rahul</h3>
+        <p>Frontend Developer</p>
+      </article>
+
+      <article class="member">
+        <h3>Priya</h3>
+        <p>Backend Developer</p>
+      </article>
+
+      <article class="member">
+        <h3>Aman</h3>
+        <p>Team Leader</p>
+      </article>
+
+      <article class="member">
+        <h3>Neha</h3>
+        <p>UI/UX Designer</p>
+      </article>
+    </section>
+  </body>
+</html>

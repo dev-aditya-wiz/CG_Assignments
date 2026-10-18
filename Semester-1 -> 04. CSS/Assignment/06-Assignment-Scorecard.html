@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICC World Cup 2011 Scorecard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f0f0f0; /* Fallback background */
+            background-image: linear-gradient(to right, rgba(255,255,255,1) 60%, rgba(255,255,255,0.7) 100%), url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Indian_cricket_team_celebrating_2011_World_Cup_victory.jpg/1200px-Indian_cricket_team_celebrating_2011_World_Cup_victory.jpg'); /* Added a placeholder background image to simulate the faded right side */
+            background-size: cover;
+            background-position: right center;
+            background-attachment: fixed;
+            padding: 40px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.95);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Header Section */
+        .header-top {
+            display: flex;
+            justify-content: flex-end;
+            padding: 20px 20px 0;
+        }
+
+        .logo {
+            font-size: 28px;
+            font-weight: 800;
+            color: #000;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo span.pro {
+            color: #e54b3c;
+        }
+
+        .logo-ball {
+            width: 15px;
+            height: 15px;
+            background: radial-gradient(circle at 30% 30%, #ff8a65, #e53935);
+            border-radius: 50%;
+            margin-left: 2px;
+            display: inline-block;
+        }
+
+        .titles {
+            padding: 0 30px 20px;
+        }
+
+        .main-title {
+            font-size: 38px;
+            font-weight: 900;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+            margin-bottom: 5px;
+        }
+
+        .sub-title {
+            font-size: 20px;
+            color: #666;
+            font-weight: 500;
+        }
+
+        /* Scorecard Table */
+        .scorecard-header {
+            background-color: #e54b3c;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+
+        th, td {
+            padding: 12px 20px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        th {
+            font-weight: 600;
+            color: #222;
+            font-size: 14px;
+        }
+
+        /* Aligning number columns */
+        th:nth-child(n+3), 
+        td:nth-child(n+3) {
+            text-align: right;
+            width: 8%;
+        }
+
+        /* First col (Batsman) width */
+        th:nth-child(1), td:nth-child(1) {
+            width: 30%;
+        }
+        
+        /* Second col (Dismissal) width */
+        th:nth-child(2), td:nth-child(2) {
+            width: 30%;
+            color: #888;
+            font-size: 14px;
+        }
+
+        /* Zebra striping for rows */
+        tbody tr:nth-child(odd) {
+            background-color: #fdfdfd;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f7f7f7;
+        }
+
+        /* Specific text colors */
+        .batsman-name {
+            color: #2196F3; /* Blue */
+            text-decoration: none;
+        }
+
+        .batsman-name:hover {
+            text-decoration: underline;
+        }
+
+        .score-val {
+            font-weight: 600;
+        }
+
+        /* Footer Rows (Extras, Total, Did not bat) */
+        .tfoot-row td {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .tfoot-label {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .did-not-bat-list {
+            color: #2196F3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Logo and Titles -->
+        <div class="header-top">
+            <div class="logo">Cric<span class="pro">Pro</span><div class="logo-ball"></div></div>
+        </div>
+        <div class="titles">
+            <h1 class="main-title">ICC WORLD CUP 2011</h1>
+            <h2 class="sub-title">India Vs SriLanka ScoreCard</h2>
+        </div>
+
+        <!-- Scorecard Section -->
+        <div class="scorecard-header">
+            <span>India Innings</span>
+            <span>277- 4 (48.2)</span>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Batsman</th>
+                    <th></th>
+                    <th>R</th>
+                    <th>B</th>
+                    <th>4s</th>
+                    <th>6s</th>
+                    <th>SR</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#" class="batsman-name">Virender Sehwag</a></td>
+                    <td>lbw b L Malinga</td>
+                    <td class="score-val">0</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0.00</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="batsman-name">Sachin Tendulkar</a></td>
+                    <td>c K Sangakkara b L Malinga</td>
+                    <td class="score-val">18</td>
+                    <td>14</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>128.57</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="batsman-name">Gautam Gambhir</a></td>
+                    <td>b T Perera</td>
+                    <td class="score-val">97</td>
+                    <td>122</td>
+                    <td>9</td>
+                    <td>0</td>
+                    <td>79.51</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="batsman-name">Virat Kohli</a></td>
+                    <td>c & b T Dilshan</td>
+                    <td class="score-val">35</td>
+                    <td>49</td>
+                    <td>4</td>
+                    <td>0</td>
+                    <td>71.43</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="batsman-name">MS Dhoni (c & wk)</a></td>
+                    <td>not out</td>
+                    <td class="score-val">91</td>
+                    <td>79</td>
+                    <td>8</td>
+                    <td>2</td>
+                    <td>115.19</td>
+                </tr>
+                <tr>
+                    <td><a href="#" class="batsman-name">Yuvraj Singh</a></td>
+                    <td>not out</td>
+                    <td class="score-val">21</td>
+                    <td>24</td>
+                    <td>2</td>
+                    <td>0</td>
+                    <td>87.50</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="tfoot-row">
+                    <td class="tfoot-label">Extras</td>
+                    <td colspan="6">15 (b 1, lb 6, w 8, nb 0, p 0)</td>
+                </tr>
+                <tr class="tfoot-row">
+                    <td class="tfoot-label">Total</td>
+                    <td colspan="6">277 (4 wkts, 48.2 Ov)</td>
+                </tr>
+                <tr class="tfoot-row">
+                    <td class="tfoot-label">Did not bat</td>
+                    <td colspan="6" class="did-not-bat-list">
+                        Suresh Raina, Harbhajan Singh, Zaheer Khan, Munaf Patel, S Sreesanth
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</body>
+</html>

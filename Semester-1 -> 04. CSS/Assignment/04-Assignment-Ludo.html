@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ludo Board</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background-color: #fff;
+        }
+
+        .ludo-board {
+            display: grid;
+            grid-template-columns: 300px 150px 300px;
+            grid-template-rows: 300px 150px 300px;
+            width: 750px;
+            height: 750px;
+            border: 2px solid black;
+        }
+
+        .home {
+            padding: 50px;
+            box-sizing: border-box;
+        }
+
+        .hr {
+            background-color: #ea3323;
+        }
+
+        .hg {
+            background-color: #317f43;
+        }
+
+        .hy {
+            background-color: #fdf139;
+        }
+
+        .hb {
+            background-color: #1f34ee;
+        }
+
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: #fff;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            place-items: center;
+        }
+
+        .circle {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border-style: solid;
+            border-width: 4px;
+            box-sizing: border-box;
+        }
+
+        .cr {
+            border-color: #ea3323;
+        }
+
+        .cg {
+            border-color: #317f43;
+        }
+
+        .cy {
+            border-color: #fdf139;
+        }
+
+        .cb {
+            border-color: #1f34ee;
+        }
+
+        .center {
+            box-sizing: border-box;
+            border-style: solid;
+            border-width: 75px;
+            border-color: #317f43 #fdf139 #1f34ee #ea3323;
+        }
+
+        .path {
+            display: grid;
+        }
+
+        .top-path,.bottom-path {
+            grid-template-columns: repeat(3, 50px);
+            grid-template-rows: repeat(6, 50px);
+        }
+
+        .left-path,.right-path {
+            grid-template-columns: repeat(6, 50px);
+            grid-template-rows: repeat(3, 50px);
+        }
+
+        .path div {
+            box-sizing: border-box;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 36px;
+            color: black;
+        }
+
+        .r {
+            background-color: #ea3323;
+        }
+
+        .g {
+            background-color: #317f43;
+        }
+
+        .y {
+            background-color: #fdf139;
+        }
+
+        .b {
+            background-color: #1f34ee;
+        }
+    </style>
+</head>
+<body>
+    <div class="ludo-board">
+        <div class="home hr">
+            <div class="inner">
+                <div class="circle cr"></div>
+                <div class="circle cr"></div>
+                <div class="circle cr"></div>
+                <div class="circle cr"></div>
+            </div>
+        </div>
+
+        <div class="path top-path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="g"></div>
+            <div class="g">&#9733;</div>
+            <div class="g">&#9733;</div>
+            <div class="g"></div>
+            <div></div>
+            <div></div>
+            <div class="g"></div>
+            <div></div>
+            <div></div>
+            <div class="g"></div>
+            <div></div>
+            <div></div>
+            <div class="g"></div>
+            <div></div>
+        </div>
+
+        <div class="home hg">
+            <div class="inner">
+                <div class="circle cg"></div>
+                <div class="circle cg"></div>
+                <div class="circle cg"></div>
+                <div class="circle cg"></div>
+            </div>
+        </div>
+
+        <div class="path left-path">
+            <div></div>
+            <div class="r">&#9733;</div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="r"></div>
+            <div class="r"></div>
+            <div class="r"></div>
+            <div class="r"></div>
+            <div class="r"></div>
+            <div></div>
+            <div></div>
+            <div class="r">&#9733;</div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="center"></div>
+
+        <div class="path right-path">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="y">&#9733;</div>
+            <div></div>
+            <div></div>
+            <div class="y"></div>
+            <div class="y"></div>
+            <div class="y"></div>
+            <div class="y"></div>
+            <div class="y"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div class="y">&#9733;</div>
+            <div></div>
+        </div>
+
+        <div class="home hb">
+            <div class="inner">
+                <div class="circle cb"></div>
+                <div class="circle cb"></div>
+                <div class="circle cb"></div>
+                <div class="circle cb"></div>
+            </div>
+        </div>
+
+        <div class="path bottom-path">
+            <div></div>
+            <div class="b"></div>
+            <div></div>
+            <div></div>
+            <div class="b"></div>
+            <div></div>
+            <div></div>
+            <div class="b"></div>
+            <div></div>
+            <div></div>
+            <div class="b"></div>
+            <div class="b">&#9733;</div>
+            <div class="b">&#9733;</div>
+            <div class="b"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <div class="home hy">
+            <div class="inner">
+                <div class="circle cy"></div>
+                <div class="circle cy"></div>
+                <div class="circle cy"></div>
+                <div class="circle cy"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
