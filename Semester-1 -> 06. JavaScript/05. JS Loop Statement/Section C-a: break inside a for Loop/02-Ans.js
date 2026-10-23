@@ -1,7 +1,7 @@
-let correctPassword = "1234";
-let password = "1111";
+let correctPass = "1234";
+let pass = "1111";
 for (let i = 1; i <= 5; i++) {
-    if (password === correctPassword) {
+    if (pass === correctPass) {
         console.log("Access granted");
         break;
     }
@@ -10,3 +10,17 @@ for (let i = 1; i <= 5; i++) {
     }
 }
 // Account locked
+
+let password = 1234;
+let flag = false;
+for(let i=1; i<=5;i++){
+  let enteredPassword = prompt ("Enter the password: ");
+  if(parseInt (enteredPassword)===password){
+    console. log("Access granted");
+    flag = true;
+    break;
+  }
+}
+if(!flag){
+  console.log("Account locked!")
+}
