@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CricPro Scorecard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Roboto, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #ffffff;
+            background-image: url('backgroud.png');
+            background-position: right top;
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-attachment: fixed;
+            color: #000000;
+            overflow-x: hidden;
+        }
+
+        header {
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 48px;
+            position: relative;
+            z-index: 100;
+        }
+
+        .logo {
+            height: 48px;
+            cursor: pointer;
+        }
+
+        .main-container {
+            padding: 0 48px 64px 48px;
+            display: flex;
+            flex-direction: column;
+            max-width: 900px;
+        }
+
+        .page-title {
+            font-size: 46px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            color: #000000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .page-subtitle {
+            font-size: 22px;
+            color: #666666;
+            margin-bottom: 40px;
+            font-weight: 500;
+        }
+
+        .scorecard-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(255, 255, 255, 0.92);
+        }
+
+        .scorecard-table th, .scorecard-table td {
+            padding: 14px 16px;
+            text-align: right;
+            font-size: 15px;
+        }
+
+        .scorecard-table th:first-child, .scorecard-table td:first-child,
+        .scorecard-table th:nth-child(2), .scorecard-table td:nth-child(2) {
+            text-align: left;
+        }
+
+        .innings-header {
+            background-color: #df4b33;
+            color: #ffffff;
+        }
+
+        .innings-header th {
+            font-size: 16px;
+            padding: 16px;
+            font-weight: 500;
+        }
+
+        .col-headers {
+            background-color: #f7f7f7;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .col-headers th {
+            font-weight: 400;
+            color: #000000;
+        }
+
+        .scorecard-table tr {
+            border-bottom: 1px solid #eeeeee;
+        }
+
+        .player-name {
+            color: #2196f3;
+            text-decoration: none;
+        }
+
+        .dismissal {
+            color: #888888;
+        }
+
+        .summary-row td:first-child {
+            color: #000000;
+        }
+
+        .summary-row td:nth-child(2) {
+            color: #000000;
+        }
+
+        @media (max-width: 1100px) {
+            body {
+                background-size: cover;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .main-container {
+                max-width: 100%;
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 600px) {
+            header {
+                padding: 0 20px;
+                justify-content: center;
+            }
+            .page-title {
+                font-size: 32px;
+            }
+            .scorecard-table {
+                font-size: 13px;
+            }
+            .scorecard-table th, .scorecard-table td {
+                padding: 8px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="CricPro Logo" class="logo">
+    </header>
+
+    <div class="main-container">
+        <h1 class="page-title">ICC WORLD CUP 2011</h1>
+        <h3 class="page-subtitle">India Vs SriLanka ScoreCard</h3>
+
+        <table class="scorecard-table">
+            <tr class="innings-header">
+                <th colspan="2">India Innings</th>
+                <th colspan="5">277- 4 (48.2)</th>
+            </tr>
+            <tr class="col-headers">
+                <th>Batsman</th>
+                <th></th>
+                <th>R</th>
+                <th>B</th>
+                <th>4s</th>
+                <th>6s</th>
+                <th>SR</th>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">Virender Sehwag</a></td>
+                <td class="dismissal">lbw b L Malinga</td>
+                <td>0</td>
+                <td>2</td>
+                <td>0</td>
+                <td>0</td>
+                <td>0.00</td>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">Sachin Tendulkar</a></td>
+                <td class="dismissal">c K Sangakkara b L Malinga</td>
+                <td>18</td>
+                <td>14</td>
+                <td>2</td>
+                <td>0</td>
+                <td>128.57</td>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">Gautam Gambhir</a></td>
+                <td class="dismissal">b T Perera</td>
+                <td>97</td>
+                <td>122</td>
+                <td>9</td>
+                <td>0</td>
+                <td>79.51</td>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">Virat Kohli</a></td>
+                <td class="dismissal">c &amp; b T Dilshan</td>
+                <td>35</td>
+                <td>49</td>
+                <td>4</td>
+                <td>0</td>
+                <td>71.43</td>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">MS Dhoni (c &amp; wk)</a></td>
+                <td class="dismissal">not out</td>
+                <td>91</td>
+                <td>79</td>
+                <td>8</td>
+                <td>2</td>
+                <td>115.19</td>
+            </tr>
+            <tr>
+                <td><a href="#" class="player-name">Yuvraj Singh</a></td>
+                <td class="dismissal">not out</td>
+                <td>21</td>
+                <td>24</td>
+                <td>2</td>
+                <td>0</td>
+                <td>87.50</td>
+            </tr>
+            <tr class="summary-row">
+                <td>Extras</td>
+                <td colspan="6">15 (b 1, lb 6, w 8, nb 0, p 0)</td>
+            </tr>
+            <tr class="summary-row">
+                <td>Total</td>
+                <td colspan="6">277 (4 wkts, 48.2 Ov)</td>
+            </tr>
+            <tr class="summary-row">
+                <td>Did not bat</td>
+                <td colspan="6">
+                    <a href="#" class="player-name">Suresh Raina, Harbhajan Singh, Zaheer Khan, Munaf Patel, S Sreesanth</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

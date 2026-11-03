@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator UI</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #121212;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .calculator {
+            width: 340px;
+            background-color: #1c1c1e;
+            padding: 24px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            border: 1px solid #3a3a3c;
+            border-radius: 24px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        .display {
+            color: #ffffff;
+            font-size: 80px;
+            font-weight: 300;
+            text-align: right;
+            padding: 10px 0;
+            margin-bottom: 10px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .buttons-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 12px;
+        }
+
+        button {
+            aspect-ratio: 1;
+            border: none;
+            border-radius: 50%;
+            font-size: 28px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.2s ease;
+        }
+
+        .btn-light-gray {
+            background-color: #a5a5a3;
+            color: #000000;
+        }
+
+        .btn-dark-gray {
+            background-color: #333336;
+            color: #ffffff;
+        }
+
+        .btn-orange {
+            background-color: #ff9f0a;
+            color: #ffffff;
+        }
+
+        .btn-zero {
+            grid-column: span 2;
+            aspect-ratio: auto;
+            border-radius: 40px;
+            justify-content: flex-start;
+            padding-left: 32px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calculator">
+        <div class="display">7744</div>
+
+        <div class="buttons-grid">
+            <button class="btn-light-gray">C</button>
+            <button class="btn-light-gray">+/-</button>
+            <button class="btn-light-gray">%</button>
+            <button class="btn-orange">÷</button>
+
+            <button class="btn-dark-gray">7</button>
+            <button class="btn-dark-gray">8</button>
+            <button class="btn-dark-gray">9</button>
+            <button class="btn-orange">x</button>
+
+            <button class="btn-dark-gray">4</button>
+            <button class="btn-dark-gray">5</button>
+            <button class="btn-dark-gray">6</button>
+            <button class="btn-orange">-</button>
+
+            <button class="btn-dark-gray">1</button>
+            <button class="btn-dark-gray">2</button>
+            <button class="btn-dark-gray">3</button>
+            <button class="btn-orange">+</button>
+
+            <button class="btn-dark-gray btn-zero">0</button>
+            <button class="btn-dark-gray">,</button>
+            <button class="btn-orange">=</button>
+        </div>
+    </div>
+
+</body>
+</html>

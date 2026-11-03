@@ -1,0 +1,145 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f9fc;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header, main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.subtitle, .note {
+    color: #666666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.box {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    transition: border-color 0.18s ease, transform 0.14s ease;
+}
+
+.box:hover {
+    border-color: #333333;
+    transform: translateY(-4px);
+}
+
+.box1 {
+    border: 3px solid #1e88e5;
+    padding: 12px;
+}
+
+.box2 {
+    border: 4px dotted #4caf50;
+    padding: 20px;
+}
+
+.box3 {
+    border: 2px dashed #f57c00;
+    border-radius: 12px;
+    margin: 8px 0 24px 12px;
+}
+
+.center-auto {
+    width: 60%;
+    max-width: 360px;
+    margin: 0 auto;
+    border: 2px solid #9c27b0;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.center-flex-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e2e8f0;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.center-flex {
+    max-width: 250px;
+    width: 100%;
+    border: 2px solid #e91e63;
+    padding: 20px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.explain-box {
+    margin: 20px 0;
+}
+
+.with-content {
+    width: 100%;
+    padding: 24px;
+    border: 4px solid #607d8b;
+    background-color: #ffffff;
+}
+
+.outline-demo {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+}
+
+.outline-button {
+    padding: 12px 24px;
+    border: 2px solid #222222;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+
+.outline-button:focus,
+.outline-button:focus-visible {
+    outline: 3px solid rgba(30, 136, 229, 0.5);
+    outline-offset: 4px;
+}
+
+.grid-demo {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 720px) {
+    .grid-demo {
+        grid-template-columns: 1fr;
+    }
+
+    .center-auto {
+        width: 100%;
+    }
+
+    .box3 {
+        margin: 8px 0 12px 0;
+    }
+}

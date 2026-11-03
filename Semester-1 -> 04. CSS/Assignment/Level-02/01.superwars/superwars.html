@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Game UI</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: serif;
+        }
+
+        .game-container {
+            width: 900px;
+            height: 500px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 40px 60px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .player-side {
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            width: 125px;
+            height: 180px;
+            background-color: #ffffff;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 14px 8px;
+            box-sizing: border-box;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .card-avatar {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-avatar img {
+            width: 74px;
+            height: 74px;
+            object-fit: contain;
+        }
+
+        .card-name {
+            font-size: 13px;
+            text-align: center;
+            color: #000;
+            line-height: 1.2;
+            font-family: sans-serif;
+        }
+
+        .card-score {
+            font-size: 28px;
+            font-weight: normal;
+            font-family: serif;
+        }
+
+        .score-board {
+            position: absolute;
+            left: 50%;
+            top: 40px;
+            transform: translateX(-50%);
+            font-size: 32px;
+            letter-spacing: 2px;
+            font-family: serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="game-container">
+        <div class="player-side">
+            <div class="card">
+                <div class="card-avatar"><img src="super-1.png" alt="Spiderman"></div>
+                <div class="card-name">Spiderman</div>
+                <div class="card-score">12</div>
+            </div>
+            <div class="card">
+                <div class="card-avatar"><img src="super-3.png" alt="Wonder Women"></div>
+                <div class="card-name">Wonder<br>Women</div>
+                <div class="card-score">30</div>
+            </div>
+        </div>
+
+        <div class="score-board">
+            5 - 0
+        </div>
+
+        <div class="player-side">
+            <div class="card">
+                <div class="card-avatar"><img src="super-2.png" alt="Captain America"></div>
+                <div class="card-name">Captain<br>America</div>
+                <div class="card-score">50</div>
+            </div>
+            <div class="card">
+                <div class="card-avatar"><img src="super-4.png" alt="Gem Woman"></div>
+                <div class="card-name">Gem Woman</div>
+                <div class="card-score">12</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

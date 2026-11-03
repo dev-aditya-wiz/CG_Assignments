@@ -1,0 +1,111 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa;
+    color: #202124;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header, main, footer, .primary-nav {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.subtitle {
+    font-size: 1rem;
+    color: #5f6368;
+    margin-top: -10px;
+    margin-bottom: 24px;
+}
+
+.note {
+    font-size: 0.85rem;
+    color: #70757a;
+    margin-bottom: 16px;
+}
+
+.primary-nav {
+    background-color: #ffffff;
+    border: 1px solid #e8eaed;
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 32px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.nav-list {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    align-items: center;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.nav-link, .sample-link {
+    color: #1a73e8; /* Blue */
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 2px;
+    transition: color 0.25s ease, text-decoration-color 0.25s ease;
+}
+
+.nav-link:hover, .sample-link:hover {
+    color: #1e8e3e;
+    text-decoration-color: transparent;
+}
+
+.nav-link:active, .nav-link.active,
+.sample-link:active, .sample-link.active {
+    color: #d93025;
+    text-decoration: none;
+}
+
+.nav-link:visited, .nav-link.visited,
+.sample-link:visited, .sample-link.visited {
+    color: #5f6368;
+}
+
+.nav-link:focus-visible,
+.sample-link:focus-visible,
+.icon-link:focus-visible {
+    outline: 3px solid rgba(30, 136, 229, 0.5);
+    outline-offset: 4px;
+    border-radius: 2px;
+}
+
+.icon-list {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.icon-link {
+    color: #1a73e8;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.25s ease;
+    font-weight: 500;
+}
+
+.icon-link:hover {
+    color: #1e8e3e;
+}
+
+.icon-link::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: currentColor;
+    border-radius: 50%;
+    margin-right: 12px;
+}
